@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace eCommerce.Data
 {
-    public class DataContext : DbContext
+    public class DataContext : DbContext , IDisposable
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
